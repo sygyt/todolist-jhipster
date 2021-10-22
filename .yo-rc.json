@@ -44,6 +44,8 @@
     "languages": ["fr", "en"],
     "herokuAppName": "obscure-journey-49560",
     "herokuDeployType": "git",
-    "herokuJavaVersion": "11"
+    "herokuJavaVersion": "11",
+    "entities": ["Todo", "Tag", "Comment"],
+    "lastLiquibaseTimestamp": 1634918017000
   }
 }

@@ -1,0 +1,26 @@
+entity Todo {
+	title String required
+    description String
+    createdAt Instant required
+    deadline Instant
+}
+
+entity Tag {
+	name String required
+	createdAt Instant required
+}
+
+entity Comment {
+	body String required
+    createdAt Instant required
+}
+
+
+relationship ManyToMany {
+	Todo{tag(name)} to Tag{todo}
+}
+
+relationship ManyToOne {
+	Todo{user(login)} to User
+    Comment{todo(title)} to Todo
+}

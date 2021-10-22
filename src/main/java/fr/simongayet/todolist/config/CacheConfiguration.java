@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, fr.simongayet.todolist.domain.User.class.getName());
             createCache(cm, fr.simongayet.todolist.domain.Authority.class.getName());
             createCache(cm, fr.simongayet.todolist.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.simongayet.todolist.domain.Todo.class.getName());
+            createCache(cm, fr.simongayet.todolist.domain.Todo.class.getName() + ".tags");
+            createCache(cm, fr.simongayet.todolist.domain.Tag.class.getName());
+            createCache(cm, fr.simongayet.todolist.domain.Tag.class.getName() + ".todos");
+            createCache(cm, fr.simongayet.todolist.domain.Comment.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
