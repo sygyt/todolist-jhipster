@@ -41,6 +41,9 @@
     "jwtSecretKey": "MDU1ZDBjNTg4Y2U5NGNjYTlkMWI3OTFkMDY2MTU2ZDY5MTVjMDdjNDBiYzVhMmIwZjNmODBkNDk2ZTZhYmQwZWNmOTI0MDBmMGZjYjI1NmE4MzVlZWRmZTFjMjI2NzQ4MzJlNDI0NzBjOGI1MWEyNTJhNTI0N2M5NjdlMzhmMWE=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["fr", "en"]
+    "languages": ["fr", "en"],
+    "herokuAppName": "obscure-journey-49560",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }
