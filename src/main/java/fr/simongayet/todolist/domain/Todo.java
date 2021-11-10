@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -26,6 +27,9 @@ public class Todo implements Serializable {
     @NotNull
     @Column(name = "title", nullable = false)
     private String title;
+
+    @ManyToOne
+    private User user;
 
     public Long getId() {
         return id;
@@ -51,6 +55,19 @@ public class Todo implements Serializable {
 
     public Todo title(String title) {
         this.setTitle(title);
+        return this;
+    }
+
+    public User getUser() {
+        return this.user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Todo user(User user) {
+        this.setUser(user);
         return this;
     }
 
